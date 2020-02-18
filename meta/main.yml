@@ -1,0 +1,22 @@
+galaxy_info:
+  role_name: hoplacloud.del_adduser
+  author: hoplacloud
+  description: Hopla.cloud role for ansible to remove default system user
+  company: hopla.cloud
+
+  license: GPLv3
+
+  min_ansible_version: 2.5
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - bionic
+        - xenial
+    - name: EL
+      versions:
+        - 7
+        
+  galaxy_tags:
+
+dependencies: []
