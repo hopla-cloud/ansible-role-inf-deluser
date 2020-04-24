@@ -1,6 +1,6 @@
 ---
 - name: Kill SSH
-  shell: sleep 1; pkill -u {{ default_username }} sshd
+  shell: sleep 1; pkill -u {{ default_username }}
   async: 3
   poll: 2
   ignore_errors: True
