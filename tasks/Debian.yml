@@ -1,5 +1,5 @@
 ---
-- name: Kill SSH
+- name: Kill ALL process for the default user
   shell: sleep 1; pkill -u {{ default_username }}
   async: 3
   poll: 2
@@ -11,7 +11,7 @@
     seconds: 3
   when: default_username != 'root'
 
-- name: Delete delfaut SUDO user
+- name: Delete default SUDO user
   user:
     name: "{{ default_username }}"
     comment: "Default sudo user created by hopla.cloud"
